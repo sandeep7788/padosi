@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorPrimaryTrans">#a0673AB7</color>
+    <color name="colorAccentTrans">#a0009688</color>
+    <color name="colorBlackTrans">#a0000000</color>
+    <color name="logincolor">#2980b9</color>
+    <color name="application">#5c1faa</color>
+    <color name="c1"> #eaecee </color>
+    <color name="c2"> #d5d8dc </color>
+    <color name="c3">#abb2b9</color>
+    <color name="c4"> #808b96 </color>
+    <color name="c5">#566573</color>
+    <color name="c6"> #2c3e50 </color>
+    <color name="c7">#273746</color>
+    <color name="c8"> #212f3d </color>
+    <color name="c9"> #1c2833 </color>
+    <color name="c10">#17202a</color>
+    <color name="a1">#000000</color>
+    <color name="a2">#929fb5</color>
+    <color name="a3">#c1cbd8</color>
+    <color name="a4">#f1f3f6</color>
+    <color name="a5">#ffffff</color>
+</resources>

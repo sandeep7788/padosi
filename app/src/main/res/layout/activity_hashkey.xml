@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorAccentTrans"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorBlackTrans"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:layout_height="match_parent"
+                android:src="@color/application"
+                android:padding="10dp"
+                android:layout_marginLeft="16dp"
+                tools:ignore="VectorDrawableCompat"
+                android:id="@+id/arrow_dr"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="80dp"
+                android:textStyle="bold"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editprofile"
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:tint="#ffffff"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/profilepiclayout">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/doctorlistimage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_account_circle_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/p_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:layout_alignParentBottom="true"
+                        android:tint="#ffffff"
+                        android:layout_alignRight="@+id/doctorlistimage"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    tools:text="adfjnaksdf kldf"
+                    android:id="@+id/name"
+                    android:layout_marginTop="10dp"/>
+
+                <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cardiologist"
+                android:gravity="center"
+                android:textSize="10sp"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="#FC4A58"
+                                    android:textStyle="bold"
+                                    android:layout_weight="0.5"/>
+
+                                <ImageView
+                                    android:id="@+id/i_name"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_edit_black_24dp"
+                                    tools:ignore="VectorDrawableCompat"
+                                    android:layout_marginRight="10dp"/>
+
+
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="3"
+                                android:padding="5dp"
+                                android:background="@null"
+                                android:id="@+id/e_name"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="About"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="#FC4A58"
+                                    android:textStyle="bold"
+                                    android:layout_weight="0.5"/>
+
+                                <ImageView
+                                    android:id="@+id/i_about"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_edit_black_24dp"
+                                    tools:ignore="VectorDrawableCompat"
+                                    android:layout_marginRight="10dp"/>
+
+
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="3"
+                                android:text="Name"
+                                android:padding="5dp"
+                                android:background="@null"
+                                android:id="@+id/e_about"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="about"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="#FC4A58"
+                                    android:textStyle="bold"
+                                    android:layout_weight="0.5"/>
+
+                                <ImageView
+                                    android:id="@+id/icon_about"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_edit_black_24dp"
+                                    tools:ignore="VectorDrawableCompat"
+                                    android:layout_marginRight="10dp"/>
+
+
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="3"
+                                android:padding="5dp"
+                                android:background="@null"
+                                android:id="@+id/e_hobby"
+                                android:textSize="15dp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:text="Done"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_backgroundlogingoogle"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btn_done"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

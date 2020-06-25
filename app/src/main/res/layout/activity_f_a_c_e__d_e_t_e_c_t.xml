@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<!--
+    <com.camerakit.CameraKitView
+        android:layout_above="@id/btn_detect"
+        android:layout_width="match_parent"
+        android:id="@+id/camera_view"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_flash="auto"
+        app:camera_facing="back"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera">
+    </com.camerakit.CameraKitView>
+-->
+
+
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_detect"
+        android:text="Detect"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

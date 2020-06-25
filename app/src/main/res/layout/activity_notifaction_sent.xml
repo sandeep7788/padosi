@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="99dp"
+    android:padding="10dp"
+    android:background="@color/a4">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:text="Testing"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        />
+    <TextView
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:text="Testing is awecome"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/title"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginRight="-44dp"
+        android:layout_toStartOf="@+id/b2"
+        android:layout_toLeftOf="@id/b1"
+        android:layout_toEndOf="@+id/text"
+        android:background="@drawable/ic_favorite_border_black_24dp"/>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendList"
+    android:background="#a05c1faa">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#a05c1faa"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/c1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="9dp"
+            android:foregroundGravity="center_horizontal"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:foregroundGravity="center_horizontal"
+            android:text="Who Like Your Profile"
+            android:textColor="@color/c1"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+
+<!--
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gif1"
+        android:scaleType="fitXY" />
+-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a05c1faa"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginTop="45dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
